@@ -12,6 +12,8 @@
 		BF64A31D1FAB3651005FFDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64A31B1FAB3651005FFDDA /* Main.storyboard */; };
 		BF64A31F1FAB3651005FFDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF64A31E1FAB3651005FFDDA /* Assets.xcassets */; };
 		BF64A3221FAB3651005FFDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64A3201FAB3651005FFDDA /* LaunchScreen.storyboard */; };
+		BF64A32A1FAB369E005FFDDA /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64A3291FAB369E005FFDDA /* PreviewView.swift */; };
+		BF64A32C1FAB5297005FFDDA /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BF64A32B1FAB51E6005FFDDA /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BF64A31E1FAB3651005FFDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF64A3211FAB3651005FFDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF64A3231FAB3651005FFDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF64A3291FAB369E005FFDDA /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		BF64A32B1FAB51E6005FFDDA /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		BF64A3161FAB3651005FFDDA /* ObjectRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				BF64A32B1FAB51E6005FFDDA /* Inceptionv3.mlmodel */,
 				BF64A3171FAB3651005FFDDA /* AppDelegate.swift */,
 				BF64A3191FAB3651005FFDDA /* ViewController.swift */,
 				BF64A31B1FAB3651005FFDDA /* Main.storyboard */,
 				BF64A31E1FAB3651005FFDDA /* Assets.xcassets */,
 				BF64A3201FAB3651005FFDDA /* LaunchScreen.storyboard */,
 				BF64A3231FAB3651005FFDDA /* Info.plist */,
+				BF64A3291FAB369E005FFDDA /* PreviewView.swift */,
 			);
 			path = ObjectRecognition;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF64A31A1FAB3651005FFDDA /* ViewController.swift in Sources */,
+				BF64A32C1FAB5297005FFDDA /* Inceptionv3.mlmodel in Sources */,
 				BF64A3181FAB3651005FFDDA /* AppDelegate.swift in Sources */,
+				BF64A32A1FAB369E005FFDDA /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +288,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.infostrates.ObjectRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -295,7 +303,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.infostrates.ObjectRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
